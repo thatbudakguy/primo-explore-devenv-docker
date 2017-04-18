@@ -1,6 +1,6 @@
 # Primo New UI Customization Docker Development Environment
 
-<!-- [![Build Status](https://travis-ci.org/WatzekDigitalInitiatives/docker-omeka.svg?branch=master)](https://travis-ci.org/WatzekDigitalInitiatives/docker-omeka) [![](https://images.microbadger.com/badges/version/watzek/omeka.svg)](http://microbadger.com/images/watzek/omeka "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/watzek/omeka.svg)](https://microbadger.com/images/watzek/omeka "Get your own image badge on microbadger.com") -->
+[![Build Status](https://travis-ci.org/WatzekDigitalInitiatives/primo-explore-devenv-docker.svg?branch=master)](https://travis-ci.org/WatzekDigitalInitiatives/pprimo-explore-devenv-docker) [![](https://images.microbadger.com/badges/version/watzek/primo-explore-devenv.svg)](http://microbadger.com/images/watzek/omeka "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/watzek/primo-explore-devenv.svg)](https://microbadger.com/images/watzek/omeka "Get your own image badge on microbadger.com")
 
 ## Downloading:
 

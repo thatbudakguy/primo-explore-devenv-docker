@@ -3,7 +3,7 @@ version: '2'
 services:
 
   server:
-    image: watzek/primo-explore-devenv
+    image: budak/primo-explore-devenv
     environment:
       PROXY_SERVER: http://alliance-primo-sb.hosted.exlibrisgroup.com:80
       VIEW: VIEW_CODE

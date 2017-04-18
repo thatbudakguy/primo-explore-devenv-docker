@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - "4"
+services:
+- docker
+branches:
+    only:
+        - master
+notifications:
+    slack:
+        - watzekdi:zEtuD1WHpN9DYmzZFzTsfudX#general
+    webhooks:
+        urls:
+            - https://hooks.microbadger.com/images/watzek/primo-explore-devenv/93bz2iI-x8UwttpcRPW08OHEXfw=
+script:
+- ./build.sh && ./push.sh

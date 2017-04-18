@@ -20,6 +20,8 @@ you need a view code package to use the development environment. you can provide
 
 to select a view, edit the `VIEW` property in `docker-compose.yml` to match the name of your view code folder.
 
+to select a proxy server to view live primo results, edit the `PROXY_SERVER` property in `docker-compose.yml`.
+
 from the project directory (`primo-explore-devenv-docker`), open a terminal and run:
 ```sh
 docker-compose up

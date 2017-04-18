@@ -6,10 +6,11 @@ services:
     image: budak/primo-explore-devenv
     environment:
       PROXY_SERVER: http://alliance-primo-sb.hosted.exlibrisgroup.com:80
-      VIEW: VIEW_CODE
+      VIEW: LCC_NEWUI
     ports:
       - 8003:8003
       - 3001:3001
     volumes:
       - ./views:/home/node/primo-explore-devenv/primo-explore/custom
       - ./packages:/home/node/primo-explore-devenv/packages
+      - ./tests:/home/node/primo-explore-devenv/tests

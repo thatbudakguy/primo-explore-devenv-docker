@@ -16,7 +16,7 @@ or download a zip file using the green download button above and unzip.
 
 ### Setup
 
-you need a view code package to use the development environment. you can provide your own by adding it to the `views` folder, or acquire a fresh one from [here](https://github.com/ExLibrisGroup/primo-explore-package).
+you need a view code package to use the development environment. you can provide your own by downloading it from the "back office" and adding it to the `views` folder, or acquire a fresh one from [here](https://github.com/ExLibrisGroup/primo-explore-package).
 
 to select a view, edit the `VIEW` property in `docker-compose.yml` to match the name of your view code folder.
 

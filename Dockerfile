@@ -1,5 +1,18 @@
 FROM buildpack-deps:jessie
 
+# Build-time metadata as defined at http://label-schema.org
+ARG BUILD_DATE
+ARG VCS_REF
+ARG VERSION
+LABEL org.label-schema.build-date=$BUILD_DATE \
+org.label-schema.name="primo-explore-devenv" \
+org.label-schema.description="Primo New UI Customization Docker Development Environment" \
+org.label-schema.vcs-ref=$VCS_REF \
+org.label-schema.vcs-url="https://github.com/thatbudakguy/primo-explore-devenv-docker" \
+org.label-schema.vendor="WatzekDigitalInitiatives" \
+org.label-schema.version=$VERSION \
+org.label-schema.schema-version="1.0"
+
 RUN groupadd --gid 1000 node \
     && useradd --uid 1000 --gid node --shell /bin/bash --create-home node
 

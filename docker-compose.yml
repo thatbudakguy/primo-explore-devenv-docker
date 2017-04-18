@@ -6,7 +6,7 @@ services:
     image: watzek/primo-explore-devenv
     environment:
       PROXY_SERVER: http://alliance-primo-sb.hosted.exlibrisgroup.com:80
-      VIEW: LCC_NEWUI
+      VIEW: VIEW_CODE
     ports:
       - 8003:8003
       - 3001:3001

@@ -1,0 +1,4 @@
+packages/*
+views/*
+!packages/README.md
+!views/README.md

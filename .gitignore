@@ -1,4 +1,1 @@
-packages/*
-views/*
-!packages/README.md
-!views/README.md
+docker-compose.yml

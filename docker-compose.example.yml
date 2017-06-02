@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+
+  server:
+    image: budak/primo-explore-devenv
+    environment:
+      PROXY_SERVER: http://my-server:my-port # replace with url to your primo instance
+      VIEW: MY_VIEW # replace with name of your view as it appears below in "volumes"
+    ports:
+      - 8003:8003 # used to view the application
+      - 3001:3001 # used to view the browsersync dashboard
+    volumes:
+      - ./:/home/node/primo-explore-devenv/packages # used to access generated package .zip files
+      - /path/to/my/view/:/home/node/primo-explore-devenv/primo-explore/custom/MY_VIEW # replace with path to your view folder
+      # - /path/to/my/central/package:/home/node/primo-explore-devenv/primo-explore/custom/CENTRAL_PACKAGE # optional - replace with path to your central package folder

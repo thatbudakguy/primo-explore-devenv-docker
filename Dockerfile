@@ -36,7 +36,7 @@ RUN set -ex \
 ENV NPM_CONFIG_LOGLEVEL info
 ENV NODE_VERSION 4.2.6
 ENV NPM_VERSION 3.3.12
-ENV PROXY_SERVER http://alliance-primo-sb.hosted.exlibrisgroup.com:80
+ENV PROXY_SERVER http://my-server:my-port
 ENV VIEW VIEW_CODE
 
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz" \
@@ -56,11 +56,10 @@ RUN cd /home/node/primo-explore-devenv && \
     npm install
 RUN cd /home/node/primo-explore-devenv/primo-explore/custom && \
     git clone https://github.com/ExLibrisGroup/primo-explore-package.git
-RUN sed -ie 's@http:\/\/your-server:your-port@'"$PROXY_SERVER"'@g' /home/node/primo-explore-devenv/gulp/config.js
 
 WORKDIR /home/node/primo-explore-devenv
 
 EXPOSE 8003
 EXPOSE 3001
 
-CMD [ "/bin/bash", "-c", "gulp run --view $VIEW" ]
+CMD [ "/bin/bash", "-c", "gulp run --view $VIEW --proxy $PROXY_SERVER" ]

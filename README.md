@@ -28,7 +28,7 @@ volumes:
 appears in your `docker-compose.yml`, where the path on the left is the absolute path to your view code folder.
 
 - to select a view, edit the `VIEW` property in `docker-compose.yml` to match the name you provided in the `volumes` stanza, e.g. `NAME_OF_VIEW`.
-- to select a proxy server to view live primo results, edit the `PROXY_SERVER` property in `docker-compose.yml`.
+- to select a proxy server to view live primo results, edit the `PROXY` property in `docker-compose.yml`.
 
 to start developing, open a terminal in this directory and run:
 ```sh
@@ -53,7 +53,7 @@ to change the currently displayed view, edit the `VIEW` property in `docker-comp
 docker-compose restart
 ```
 
-- making changes to `VIEW` or `PROXY_SERVER` will require the above restart command to take effect.
+- making changes to `VIEW` or `PROXY` will require the above restart command to take effect.
 - you can add as many views as you like to the `volumes` stanza.
 - you can add a central package by mounting it in the above manner and naming it `CENTRAL_PACKAGE`.
 
